@@ -1,7 +1,10 @@
 <div class="call">
   <div class="call-box-top">
-{{ if .Site.Data.contact.phone }}
-    <div class="call-phone"><strong>Phone: </strong> {{ .Site.Data.contact.phone }} </div>
+{{ if .Site.Data.contact.tel }}
+    <div class="call-phone"><strong>Tel: </strong> {{ .Site.Data.contact.tel }} </div>
+{{ end }}
+{{ if .Site.Data.contact.fax }}
+    <div class="call-phone"><strong>Fax: </strong> {{ .Site.Data.contact.fax }} </div>
 {{ end }}
     <div class="call-email"><strong>Email: </strong>
       <a href="mailto:{{ .Site.Data.contact.email }}">
